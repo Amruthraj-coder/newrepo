@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>practice</title>
+        <body>
+            <p>The main branch is, well, the "main" branch—the place where we're going to combine all of the contents of the book into one finalized, finished book.
+
+                We can create other branches to separate and track specific pieces of work.
+                
+                If I was working on Chapter 1 and you were working on Chapter 2, we could create two difference branches, chapter-1 and chapter-2—effectively two different copies of the current status of the book.
+                
+                We could then both work on our respective chapters without stepping on each others' toes or changing the contents out from under each other—we both have our own working copy that are separate from each other.
+                
+                When either of us are finished with our chapter, we can add the contents of our chapter branch back into the main branch. When we're both finished, the main branch will contain both Chapter 1 and Chapter 2.
+                
+                However, there are times where you will overwrite or change the same piece of content as someone else and we'll have to figure out how to settle those differences—and we'll see that soon.
+                
+                Note: depending on the project you may see a branch named master instead of main. It doesn't have any functional difference, just type master vs main depending on what's in your project.
+                How to check the status of a Git project
+                One thing we'll do often is check the status of our project. What changes have been made and what do we want to do with them?
+                
+                To view the status of our project we use git status:
+                
+                (main)$ git status
+                On branch main
+                Your branch is up to date with 'origin/main'.<br>
+                
+                nothing to commit, working tree clean
+                There's a few things in the result of this command, so let's break those down.
+                
+                The first thing git status tells us is we're on the main branch:
+                
+                 On branch main
+                The second sentence is a little more interesting:
+                
+                Your branch is up to date with 'origin/main'.<br>
+                Git is telling us that our branch is "up to date" with something called origin/main.
+                
+                origin is a new concept known as a remote. A remote is a "remote source" different from your local machine.
+                
+                In this project we have our lo<p>cal copy of the project, but we can also add remote sources that we can collaborate with. After all, that is one of the biggest benefits of Git: controlled collaboration with others.
+                
+                Continu <hr> ing with our book-writing example, if I write Chapter 1 on my machine and you write Chapter 2 on your machine, we could both add each other's computers as "remotes" and send and receive changes from each other.
+                
+                In practice, the prog</p>ramming community at large has decided that it is best to have a single source of truth for code. One place that is always "correct" about what the current state of the codebase is. By convention, we call this place the origin.
+                
+                In this case, GitHub is our "origin."
+                
+                In fact, we can see this by run</p>
+        </body>
+    </head>
+</html>
